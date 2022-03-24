@@ -4,6 +4,6 @@ public class CppDevaloper implements Developer {
 
     @Override
     public void writeCode() {
-        System.out.println("Cpp developer writes java code");
+        System.out.println("Cpp developer writes cpp code");
     }
 }

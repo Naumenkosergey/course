@@ -11,10 +11,19 @@ public class Program {
 //        Developer developer = new CppDevaloper();
 //        developer.writeCode();
 
-        DeveloperFactory developerFactory = createDeveloperBySpecialty("CpP");
+        DeveloperFactory developerFactory = createDeveloperBySpecialty("cpp");
         Developer developer = developerFactory.createDeveloper();
-
         developer.writeCode();
+        DeveloperFactory developerFactory2 = createDeveloperBySpecialty("java");
+        Developer developer2 = developerFactory2.createDeveloper();
+        developer2.writeCode();
+        DeveloperFactory developerFactory3 = createDeveloperBySpecialty("php");
+        Developer developer3 = developerFactory3.createDeveloper();
+        developer3.writeCode();
+        DeveloperFactory developerFactory4 = createDeveloperBySpecialty("C#");
+        Developer developer4 = developerFactory4.createDeveloper();
+        developer4.writeCode();
+
     }
 
     //метод абстрактной фабрика "Фабричный бетод"

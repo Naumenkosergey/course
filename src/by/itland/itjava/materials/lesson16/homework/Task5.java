@@ -13,7 +13,8 @@ public class Task5 {
             add("Anastasiya");
             add("lyubov");
         }};
-        addPeople(peoples, "ArrayList", 100000);
+//        addPeople(peoples, "ArrayList", 100000);
+        System.out.println(process(peoples));
 
         peoples = new LinkedList<>() {{
             add("Sergey");
@@ -23,7 +24,8 @@ public class Task5 {
             add("Anastasiya");
             add("lyubov");
         }};
-        addPeople(peoples,"LinkedList",1000000);
+//        addPeople(peoples,"LinkedList",10000000);
+        System.out.println(process(peoples));
 
     }
 
@@ -44,7 +46,7 @@ public class Task5 {
             Iterator<String> iterator = peoples.iterator();
             while (iterator.hasNext()) {
                 iterator.next();
-                if (++index % 2 == 0)
+                if (++index % 3 == 0)
                     iterator.remove();
             }
         }

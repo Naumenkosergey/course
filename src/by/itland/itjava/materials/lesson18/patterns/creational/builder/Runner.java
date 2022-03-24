@@ -10,7 +10,7 @@ public class Runner {
                 .build();
         WebSite enterpriseWebSite = new EnterpriseWebSite()
                 .name("Enterprise")
-                .cms(Cms.ALIFRESCO)
+//                .cms(Cms.ALIFRESCO)
                 .price(10000)
                 .build();
 
